@@ -1,22 +1,31 @@
 from random import randint
+from brain_games import cli
 
 
-print('Welcome to the Brain Games!')
+def greeting():
+    user_name = cli.get_user_name()
+    print(f'Hello, {user_name}')
+    return user_name
 
 
-name = input('May I have your name? ')
-print(f'Hello, {name}!')
+def parting():
+    print(f'Congratulations, {user_name}')    
 
 
 def game_question():
-    number = randint(1, 100)
     print('Answer "yes" if the number is even , otherwise answer "no".')
-    print(f'Question: {number}')
-    answer = input('Your answer: ')
-    while answer != correct_answer(number):
-        print(f'{answer} is wrong answer. Lets try again, {name}')
+    counter = 0
+    while counter < 3:
+        number = randint(1, 100)
+        print(f'Question: {number}')
         answer = input('Your answer: ')
-    print('Correct!')
+        if answer != correct_answer(number):
+            print(f'{answer} is wrong answer. Lets try again')
+            counter = 0
+            continue
+        else:
+            print('Correct')
+            counter +=1
 
 
 def correct_answer(number):
@@ -24,3 +33,9 @@ def correct_answer(number):
         return 'yes'
     else:
         return 'no'
+
+
+def run_brain_even():
+    user_name = greeting()
+    game_question()
+    print(f'Congratulations, {user_name}')
