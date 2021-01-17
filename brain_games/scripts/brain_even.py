@@ -2,16 +2,9 @@
 
 from brain_games import brain_even
 
-def greet():
-    print('Welcome to the Brain Games!')
-
 
 def main():
-    brain_even.game_question()
-    brain_even.game_question()
-    brain_even.game_question()
-    print(f'Congratulations, {brain_even.name}')
-
+    brain_even.run_brain_even()
 
 if __name__ == '__main__':
     main()
