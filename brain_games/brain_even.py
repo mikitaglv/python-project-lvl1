@@ -1,15 +1,5 @@
 from random import randint
-from brain_games import cli
-
-
-def greeting():
-    user_name = cli.get_user_name()
-    print(f'Hello, {user_name}')
-    return user_name
-
-
-def parting():
-    print(f'Congratulations, {user_name}')    
+from brain_games.engine import greeting
 
 
 def game_question():
@@ -25,7 +15,7 @@ def game_question():
             continue
         else:
             print('Correct')
-            counter +=1
+            counter += 1
 
 
 def correct_answer(number):

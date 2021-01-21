@@ -1,5 +1,4 @@
 from random import randint
-from brain_games import cli
 from brain_games.engine import greeting
 
 
@@ -10,8 +9,7 @@ def game_question():
     while counter < 3:
         first_number = randint(1, 100)
         second_number = randint(1, 100)
-        random_calculation = randint(1,3)
-
+        random_calculation = randint(1, 3)
         if random_calculation == 1:
             result = first_number + second_number
             print(f'Question: {first_number} + {second_number}')
@@ -24,15 +22,15 @@ def game_question():
             result = first_number * second_number
             print(f'Question: {first_number} * {second_number}')
             answer = input('Your answer: ')
-
-        if result == int(answer):                                                         
-            print('Correct!')                                                             
-            counter += 1                                                                  
-            continue                                                                      
-        else:                                                                             
-            print('Let\'s try again!')                                                    
-            counter = 0                                                                   
+        if result == int(answer):
+            print('Correct!')
+            counter += 1
             continue
+        else:
+            print('Let\'s try again!')
+            counter = 0
+            continue
+
 
 def run_brain_calc():
     user_name = greeting()
