@@ -7,5 +7,5 @@ def main():
     brain_even.run_brain_even()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
