@@ -3,7 +3,7 @@ from brain_games.engine import greeting
 
 
 def game_question():
-    print('Find the greatest common divisor of given numbers.')
+    print("Find the greatest common divisor of given numbers.")
     counter = 0
     while counter < 3:
         number1 = randint(1, 100)
@@ -21,13 +21,14 @@ def game_question():
 
 
 def gcd(num1, num2):
-     result = 1
-     counter = 1
-     while counter <= num1 and counter <= num2:
-         if num1 % counter == 0 and num2 % counter == 0:
-             result = counter
-         counter += 1
-     return result
+    result = 1
+    counter = 1
+    while counter <= num1 and counter <= num2:
+        if num1 % counter == 0 and num2 % counter == 0:
+            result = counter
+        counter += 1
+    return result
+
 
 def run_brain_gcd():
     user_name = greeting()
