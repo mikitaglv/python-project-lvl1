@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 
-
-def greet():
-    print("Welcome to the Brain Games!")
+from brain_games.engine import greeting
 
 
 def main():
-    greet()
+    greeting()
 
 
 if __name__ == "__main__":
