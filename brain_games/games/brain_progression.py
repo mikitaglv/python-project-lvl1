@@ -21,6 +21,7 @@ def game_question():
     question_progression.extend(progression)
     hiden_index = randint(0, 9)
     question_progression[hiden_index] = ".."
+    question_progression = ' '.join(str(x) for x in question_progression)
     question = f'Question: {question_progression}'
     correct_answer = progression[hiden_index]
     return (question, correct_answer)
