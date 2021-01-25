@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Simple mathematics quiz games"
 authors = ["Nikita Gulyaev <mikita.glv@gmail.com>"]
+repository = "https://github.com/mikitaglv/python-project-lvl1"
 packages = [
 	{ include = "brain_games" },
 ]

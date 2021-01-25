@@ -1,5 +1,7 @@
 from random import randint
-from brain_games.engine import greeting
+
+
+GAME_DESCRIPTION = "What number is missing in the progression?"
 
 
 def make_progression():
@@ -14,27 +16,11 @@ def make_progression():
 
 
 def game_question():
-    print("Shat number is missing in the progression?")
-    counter = 0
-    while counter < 3:
-        progression = make_progression()
-        question_progression = []
-        question_progression.extend(progression)
-        hiden_index = randint(0, 9)
-        question_progression[hiden_index] = ".."
-        print(f"Question: {question_progression}")
-        correct_answer = progression[hiden_index]
-        user_answer = input("Your answer: ")
-        if int(user_answer) != correct_answer:
-            print(f"{user_answer} is wrong answer. Lets try again")
-            counter = 0
-            continue
-        else:
-            print("Correct")
-            counter += 1
-
-
-def run_brain_progression():
-    user_name = greeting()
-    game_question()
-    print(f"Congratulations, {user_name}")
+    progression = make_progression()
+    question_progression = []
+    question_progression.extend(progression)
+    hiden_index = randint(0, 9)
+    question_progression[hiden_index] = ".."
+    question = f'Question: {question_progression}'
+    correct_answer = progression[hiden_index]
+    return (question, correct_answer)
