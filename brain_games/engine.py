@@ -23,7 +23,7 @@ def game_engine(game=None):
             print("Correct!")
             counter += 1
         else:
-            print(f"Lets try again, {user_name}!")
+            print(f"Let's try again, {user_name}!")
             return None
     print(f"Congratulations, {user_name}")
 
