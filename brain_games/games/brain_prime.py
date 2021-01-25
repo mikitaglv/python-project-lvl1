@@ -13,6 +13,6 @@ def is_prime(num):
 
 def game_question():
     number = randint(1, 100)
-    question = f'Question: {number}'
+    question = f"Question: {number}"
     correct_answer = is_prime(number)
     return (question, correct_answer)

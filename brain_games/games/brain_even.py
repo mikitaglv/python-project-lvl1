@@ -6,7 +6,7 @@ GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def game_question():
     number = randint(1, 100)
-    question = f'Question: {number}'
+    question = f"Question: {number}"
     correct_answer = is_even(number)
     return (question, correct_answer)
 
