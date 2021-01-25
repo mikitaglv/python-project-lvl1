@@ -3,8 +3,12 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c641368ca7d1ff1f5d91/maintainability)](https://codeclimate.com/github/mikitaglv/python-project-lvl1/maintainability)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-## Usage
+## Installation
+```bash
+pip install git+https://github.com/mikitaglv/python-project-lvl1.git
+```
 
+## Usage
 ### Brain Even
 [![asciicast](https://asciinema.org/a/kE389f21ep1nGjKzHr7vSIzbU.svg)](https://asciinema.org/a/kE389f21ep1nGjKzHr7vSIzbU)
 
