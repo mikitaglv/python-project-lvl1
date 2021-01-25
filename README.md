@@ -7,7 +7,6 @@
 ```bash
 pip install git+https://github.com/mikitaglv/python-project-lvl1.git
 ```
-
 ## Usage
 ### Brain Even
 [![asciicast](https://asciinema.org/a/kE389f21ep1nGjKzHr7vSIzbU.svg)](https://asciinema.org/a/kE389f21ep1nGjKzHr7vSIzbU)
