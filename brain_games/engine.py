@@ -23,8 +23,8 @@ def game_engine(game=None):
             print("Correct!")
             counter += 1
         else:
-            print(f"\"{user_answer}\" is wrong answer. Lets try again")
-            break
+            print(f"\"{user_answer}\" is wrong answer. Lets try again, {user_name}!")
+            return None
     print(f"Congratulations, {user_name}")
 
 
