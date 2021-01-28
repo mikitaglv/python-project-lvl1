@@ -8,8 +8,8 @@ def game_question():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
     question = f"Question: {number1} {number2}"
-    correct_answer = gcd(number1, number2)
-    return (question, correct_answer)
+    answer = gcd(number1, number2)
+    return (question, answer)
 
 
 def gcd(num1, num2):
