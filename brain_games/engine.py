@@ -6,8 +6,8 @@ ROUNDS = 3
 
 def greeting():
     print("Welcome to the Brain Games!")
-    user_name = cli.get_user_name()
-    print(f"Hello, {user_name}!")
+    user_name = cli.ask_question("May I have your name? ")
+    print(f"Hello, {user_name}!")poetr
     return user_name
 
 
@@ -18,7 +18,7 @@ def game_engine(game=None):
     while counter < ROUNDS:
         question, correct_answer = game.game_question()
         print(question)
-        user_answer = input("Your answer: ")
+        user_answer = cli.ask_question("Your answer: ")
         if user_answer == str(correct_answer):
             print("Correct!")
             counter += 1

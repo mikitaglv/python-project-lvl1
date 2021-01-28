@@ -1,5 +1,5 @@
 import prompt
 
 
-def get_user_name():
-    return prompt.string("May I have your name? ")
+def ask_question(question):
+    return prompt.string(question)
