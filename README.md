@@ -3,6 +3,16 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c641368ca7d1ff1f5d91/maintainability)](https://codeclimate.com/github/mikitaglv/python-project-lvl1/maintainability)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+**Brain Games** is a set of five console games built on the principle of popular mobile brain-boosting apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
+
+**Games**:
+- *brain-calc* - solve an arithmetic expression;
+- *brain-progression* - search for missing numbers in a sequence of numbers;
+- *brain-even* - definition of an even number;
+- *brain-gcd* - determination of the greatest common factor;
+- *brain-prime* - definition of a prime number.
+
+
 ## Installation
 ```bash
 pip install git+https://github.com/mikitaglv/python-project-lvl1.git
