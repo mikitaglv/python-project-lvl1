@@ -11,7 +11,7 @@ def greeting():
     return user_name
 
 
-def game_engine(game=None):
+def run(game=None):
     user_name = greeting()
     print(game.GAME_DESCRIPTION)
     counter = 0
@@ -26,7 +26,3 @@ def game_engine(game=None):
             print(f"Let's try again, {user_name}!")
             return None
     print(f"Congratulations, {user_name}!")
-
-
-def run(game):
-    game_engine(game)
