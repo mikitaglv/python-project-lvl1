@@ -25,5 +25,5 @@ def get_question_answer():
     second_number = randint(1, 100)
     operation = random_operation()
     question = f"Question: {first_number} {operation} {second_number}"
-    answer = correct_answer(first_number, second_number, operation)
+    answer = get_correct_answer(first_number, second_number, operation)
     return (question, str(answer))
