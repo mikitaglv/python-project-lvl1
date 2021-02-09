@@ -4,7 +4,7 @@ from random import randint
 GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def game_question():
+def get_question_answer():
     number = randint(1, 100)
     question = f"Question: {number}"
     if is_even(number):

@@ -13,7 +13,7 @@ def is_prime(num):
     return True
 
 
-def game_question():
+def get_question_answer():
     number = randint(1, 100)
     question = f"Question: {number}"
     if is_prime(number):

@@ -4,19 +4,14 @@ from brain_games import cli
 ROUNDS = 3
 
 
-def greeting():
+def run(game):
     print("Welcome to the Brain Games!")
     user_name = cli.ask_question("May I have your name? ")
     print(f"Hello, {user_name}!")
-    return user_name
-
-
-def run(game=None):
-    user_name = greeting()
     print(game.GAME_DESCRIPTION)
     counter = 0
     while counter < ROUNDS:
-        question, answer = game.game_question()
+        question, answer = game.get_question_answer()
         print(question)
         user_answer = cli.ask_question("Your answer: ")
         if user_answer == answer:
@@ -24,5 +19,5 @@ def run(game=None):
             counter += 1
         else:
             print(f"Let's try again, {user_name}!")
-            return None
+            return
     print(f"Congratulations, {user_name}!")

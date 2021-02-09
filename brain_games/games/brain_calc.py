@@ -16,11 +16,11 @@ def random_operation():
     return choice(list(operations.keys()))
 
 
-def correct_answer(first_number, second_number, operation):
+def get_correct_answer(first_number, second_number, operation):
     return str(operations[operation](first_number, second_number))
 
 
-def game_question():
+def get_question_answer():
     first_number = randint(1, 100)
     second_number = randint(1, 100)
     operation = random_operation()
