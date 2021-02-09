@@ -8,10 +8,10 @@ def game_question():
     number = randint(1, 100)
     question = f"Question: {number}"
     if is_even(number):
-        correct_answer = "yes"
+        answer = "yes"
     else:
-        correct_answer = "no"
-    return (question, correct_answer)
+        answer = "no"
+    return (question, answer)
 
 
 def is_even(number):

@@ -26,4 +26,4 @@ def game_question():
     operation = random_operation()
     question = f"Question: {first_number} {operation} {second_number}"
     answer = correct_answer(first_number, second_number, operation)
-    return (question, answer)
+    return (question, str(answer))

@@ -9,7 +9,7 @@ def game_question():
     number2 = randint(1, 100)
     question = f"Question: {number1} {number2}"
     answer = gcd(number1, number2)
-    return (question, answer)
+    return (question, str(answer))
 
 
 def gcd(num1, num2):

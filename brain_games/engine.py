@@ -19,7 +19,7 @@ def run(game=None):
         question, answer = game.game_question()
         print(question)
         user_answer = cli.ask_question("Your answer: ")
-        if user_answer == str(answer):
+        if user_answer == answer:
             print("Correct!")
             counter += 1
         else:

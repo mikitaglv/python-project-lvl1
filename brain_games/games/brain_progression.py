@@ -24,4 +24,4 @@ def game_question():
     question_progression = " ".join(str(x) for x in question_progression)
     question = f"Question: {question_progression}"
     answer = progression[hiden_index]
-    return (question, answer)
+    return (question, str(answer))
